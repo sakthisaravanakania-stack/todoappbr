@@ -1,0 +1,260 @@
+/* =========================
+   APP
+========================= */
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f4f7fb;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0 0 25px;
+  font-size: 36px;
+  color: #222;
+}
+
+.logo label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.logo select {
+  width: 180px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  width: 600px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.main-content form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.main-content form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.main-content form input:focus {
+  border-color: #555;
+}
+
+.main-content form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  background: #222;
+  color: white;
+}
+
+.main-content form button:hover {
+  background: #444;
+}
+
+
+/* =========================
+   TODO CONTAINER
+========================= */
+
+.main-concept {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.main-concept h6 {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px;
+}
+
+
+/* =========================
+   TODO CARD
+========================= */
+
+.cart {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cart h4 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #222;
+}
+
+.cart h5 {
+  margin: 0 0 20px;
+  font-size: 15px;
+  font-weight: normal;
+  color: #666;
+}
+
+
+/* =========================
+   EDIT INPUTS
+========================= */
+
+.cart > input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  outline: none;
+}
+
+.cart > input:focus {
+  border-color: #555;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.cart-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cart-status label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cart-status select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.cart-status > button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-status > button:hover {
+  background: #444;
+}
+
+.btn {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.btn button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eee;
+}
+
+.btn button:hover {
+  background: #ddd;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 650px) {
+
+  .app {
+    padding: 25px 15px;
+  }
+
+  .logo h1 {
+    font-size: 28px;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .main-content form {
+    flex-direction: column;
+  }
+
+  .main-content form button {
+    width: 100%;
+  }
+
+  .cart-status {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+}
